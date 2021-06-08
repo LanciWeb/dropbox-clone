@@ -10,6 +10,20 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+section {
+  margin: 150px auto;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
 img {
   max-width: 100%;
 }
@@ -51,7 +65,11 @@ i.fas {
 }
 
 .w-33 {
-  width: calc(100% / 3);
+  width: calc(100% / 3 - 40px);
+}
+
+.col.w-33:nth-child(3n + 2) {
+  margin: 0 60px;
 }
 
 .w-50 {
@@ -184,8 +202,12 @@ li.list-icon {
 /************* NAVBAR **************/
 
 #navbar {
+  z-index: 1;
   height: 80px;
   line-height: 80px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
 }
 
 #navbar nav {
@@ -223,9 +245,9 @@ li.list-icon {
 /* Jumbotron section */
 
 #jumbotron {
+  margin-top: 0;
   background-color: #b4d0e7;
-  /* padding-top: 100px; */
-  /* height: 650px; */
+  padding-top: 50px;
 }
 
 #jumbotron .container {
@@ -251,27 +273,13 @@ li.list-icon {
   margin-top: 100px;
   font-size: 14px;
 }
-
-#plans h2 {
-  font-size: 40px;
-  margin-bottom: 60px;
-}
-
-#plans .option {
+ì #plans .option {
   display: inline-block;
   margin-right: 50px;
 }
 
 #plans .plans-list {
   margin-top: 50px;
-}
-
-#plans .col.w-33 {
-  width: calc((100% / 3) - 40px);
-}
-
-#plans .col.w-33:nth-child(2) {
-  margin: 0 60px;
 }
 
 #plans .plans-list .item {
@@ -285,11 +293,6 @@ li.list-icon {
 
 .plans-list article {
   padding: 30px;
-}
-
-h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
 }
 
 .plans-list .price {
@@ -312,8 +315,8 @@ h3 {
   background-color: #d0d0d3;
 }
 
-/* PARTNERS SECTION */
+/**** BUSINESS FEATURES SECTION ****/
 
-#partners {
-  margin-top: 100px;
+#business-features .col {
+  margin-bottom: 50px;
 }
