@@ -119,6 +119,43 @@ i.fas {
   padding: 50px;
 }
 
+/* backgrounds */
+.bg-light-red {
+  background-color: #ff1c1c;
+}
+
+.bg-red {
+  background-color: #d5001f;
+}
+
+.bg-dark-red {
+  background-color: #61082b;
+}
+
+.bg-green {
+  background-color: #a2d39b;
+}
+
+.bg-blue {
+  background-color: #0093ce;
+}
+
+.bg-dark-blue {
+  background-color: #0d2481;
+}
+
+.bg-light-blue {
+  background-color: #b4d0e7;
+}
+
+.bg-yellow {
+  background-color: #ffd830;
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
+}
+
 /* Buttons */
 
 .btn {
@@ -319,4 +356,41 @@ li.list-icon {
 
 #business-features .col {
   margin-bottom: 50px;
+}
+
+/***** CLIENTS SECTION *****/
+
+/* Boxes */
+
+#boxes {
+  margin-top: 150px;
+}
+
+#boxes .col {
+  margin: 0;
+}
+
+#boxes > .col {
+  width: calc(100% / 3);
+  height: calc(100vw / 3);
+}
+
+.box {
+  height: 100%;
+  border: 1px dashed black;
+}
+
+.small-box {
+  height: 50%;
+  border: 1px dashed white;
+  position: relative;
+}
+
+.small-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(1);
 }
