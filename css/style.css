@@ -1,14 +1,298 @@
+/*********** GENERICS  ************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+i.fas {
+  margin-right: 5px;
+}
+
+/*********** UTILS **************/
+
+/* Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+.container-small {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-body {
-  font-family: sans-serif;
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.col {
+  float: left;
+}
+
+/* Dimensions */
+
+.w-30 {
+  width: 30%;
+}
+
+.w-33 {
+  width: calc(100% / 3);
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+/* Alignment */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Spacing */
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.my-50 {
+  margin: 50px 0;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+/* Buttons */
+
+.btn {
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0061ff;
+  display: inline-block;
+}
+
+.btn.btn-inline {
+  padding: 5px 15px;
+  display: inline;
+}
+
+.btn.btn-full {
+  display: block;
+}
+
+.btn:hover {
+  filter: brightness(1.4);
+}
+
+/* Inputs */
+
+.radio {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #d0d0d3;
+}
+
+.radio.radio-selected {
+  border: 5px solid #0061ff;
+}
+
+/* Lists */
+
+li.list-icon {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-left: 1.2em;
+  text-indent: -1.5em;
+}
+
+.list-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.list-icon.user::before {
+  content: '\f007';
+}
+.list-icon.pencil::before {
+  content: '\f303';
+}
+.list-icon.folder::before {
+  content: '\f07b';
+}
+
+.list-icon.check::before {
+  content: '\f00c';
+  color: #0061ff;
+}
+
+/************* NAVBAR **************/
+
+#navbar {
+  height: 80px;
+  line-height: 80px;
+}
+
+#navbar nav {
+  height: 100%;
+}
+
+#logo img {
+  vertical-align: middle;
+}
+
+#navbar nav ul,
+#navbar nav li {
+  height: 100%;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+#navbar nav li:not(#logo):hover {
+  border-color: currentColor;
+}
+
+#navbar nav a:not(.btn) {
+  text-decoration: none;
+  color: black;
+  padding: 0 20px;
+  height: 100%;
+  display: inline-block;
+}
+
+#navbar nav a.btn {
+  margin-right: 20px;
+}
+
+/******* MAIN ******************/
+/* Jumbotron section */
+
+#jumbotron {
+  background-color: #b4d0e7;
+  /* padding-top: 100px; */
+  /* height: 650px; */
+}
+
+#jumbotron .container {
+  position: relative;
+  bottom: -80px;
+}
+
+#jumbotron h1 {
+  font-size: 77px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+#jumbotron .fa-arrow-down {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+}
+
+/*  Plans section */
+
+#plans {
+  margin-top: 100px;
+  font-size: 14px;
+}
+
+#plans h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+#plans .option {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#plans .plans-list {
+  margin-top: 50px;
+}
+
+#plans .col.w-33 {
+  width: calc((100% / 3) - 40px);
+}
+
+#plans .col.w-33:nth-child(2) {
+  margin: 0 60px;
+}
+
+#plans .plans-list .item {
+  border: 1px solid #d0d0d3;
+}
+
+.plans-list .item header {
+  padding: 10px;
+  border-bottom: 1px solid #d0d0d3;
+}
+
+.plans-list article {
+  padding: 30px;
+}
+
+.plans-list h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.plans-list .price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.plans-list .period {
+  color: #666;
+}
+
+.plans-list .features {
+  margin-top: 50px;
+}
+
+#plans hr {
+  border: 0;
+  width: 20%;
+  height: 1px;
+  margin: 40px 0;
+  background-color: #d0d0d3;
+}
+
+/* PARTNERS SECTION */
+
+#partners {
+  margin-top: 100px;
+  height: 600px;
+  background-color: goldenrod;
 }
