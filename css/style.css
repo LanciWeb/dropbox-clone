@@ -259,11 +259,10 @@ li.list-icon {
 #navbar nav li {
   height: 100%;
   display: inline-block;
-  border-bottom: 2px solid transparent;
 }
 
 #navbar nav li:not(#logo):hover {
-  border-color: currentColor;
+  border-bottom: 2px solid currentColor;
 }
 
 #navbar nav a:not(.btn) {
