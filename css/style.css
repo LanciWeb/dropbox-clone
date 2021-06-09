@@ -245,6 +245,7 @@ li.list-icon {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  box-shadow: 0px 1px 2px #dedede;
 }
 
 #navbar nav {
@@ -259,11 +260,10 @@ li.list-icon {
 #navbar nav li {
   height: 100%;
   display: inline-block;
-  border-bottom: 2px solid transparent;
 }
 
 #navbar nav li:not(#logo):hover {
-  border-color: currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 #navbar nav a:not(.btn) {
