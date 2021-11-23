@@ -165,30 +165,32 @@ nav a {
   padding: 20px;
 }
 
-.list-icon {
+ul.icon-list li {
   list-style-type: none;
   padding-left: 1.2em;
   text-indent: -1.5em;
   margin-bottom: 20px;
 }
 
-.list-icon::before {
+ul.icon-list li::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   margin-right: 5px;
 }
 
-.list-icon.user::before {
+ul.icon-list li.user::before {
   content: '\f007';
 }
-.list-icon.folder::before {
+
+ul.icon-list li.folder::before {
   content: '\f07b';
 }
-.list-icon.pencil::before {
+
+ul.icon-list li.pencil::before {
   content: '\f303';
 }
 
-.list-icon.check::before {
+ul.icon-list li.check::before {
   content: '\f00c';
   color: #0061ff;
 }
